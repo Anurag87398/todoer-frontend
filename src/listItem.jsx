@@ -30,7 +30,7 @@ function ListItem(props){
                 task : props.text,
                 stat : clicked
             }
-            console.log('Returning : ', op);  
+            // console.log('Returning : ', op);  
             /*return to mongo, task status update*/
             /*return to mongo*/
             try{
@@ -44,11 +44,11 @@ function ListItem(props){
                     });
                 }
                 resp();
-                console.log("Task Updated");
+                // console.log("Task Updated");
             }
             catch(error){
                 alert("Some error occured (Skill Issue bro :/)");
-                console.log(error);
+                // console.log(error);
             }
             
             // const callingResp= resp();

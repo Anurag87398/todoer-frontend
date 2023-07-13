@@ -21,11 +21,11 @@ export default function Login() {
             })
         }
         else {
-            console.log("Login Clicked!");
+            // console.log("Login Clicked!");
             if (user.uname == '' || user.pass == '')
                 alert('Please Fill out the fields');
             else{
-                console.log("User:", user); 
+                // console.log("User:", user); 
                 
                 /*send to mongo*/
                 const resp= await fetch(`${URL}/api/login`, {
@@ -39,11 +39,11 @@ export default function Login() {
                 // let response = '200-L'; 
                 /*get from mongo*/
                 const response= await resp.text();
-                console.log("Response from server: ", response);
+                // console.log("Response from server: ", response);
                 
                 switch (response){
                     case "200-L" :{
-                        console.log("Login Successful!");
+                        // console.log("Login Successful!");
                         setLoginStatus(true);
                         break;
                     }                       

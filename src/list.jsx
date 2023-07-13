@@ -27,7 +27,7 @@ function List(props){
             });
             // console.log("Resp: ", resp);
             const response= await resp.json();
-            console.log("Tasks received from server: ", response);
+            // console.log("Tasks received from server: ", response);
             // let arr= useRef(response);
             // update the tasks list
             // setListItems(response);
@@ -36,7 +36,8 @@ function List(props){
             // setUsers(data);
         }
         catch(error){
-            console.log("Some error occured");
+            alert("Some error occured");
+            // console.log("Some error occured");
             // return [];
         }
     }
@@ -56,7 +57,7 @@ function List(props){
                 getArr.current= false;
             });
         }
-        console.log("List was updated");
+        // console.log("List was updated");
         
     }, [listItems, getTasks])
 
@@ -80,7 +81,7 @@ function List(props){
                     task : inputText,
                     stat : false
                 }
-                console.log("Task details: ", op); 
+                // console.log("Task details: ", op); 
                 /*return to mongo*/
                 const resp= await fetch(`${URL}/api/addTask`, {
                 method: "POST",
@@ -92,12 +93,12 @@ function List(props){
 
                 /*get from mongo*/
                 const response= await resp.text();
-                console.log("Response from server: ", response);
+                // console.log("Response from server: ", response);
                 // setListItems(response);
                 
                 switch (response){
                     case "200-TA" :{
-                        console.log("Task added!");
+                        // console.log("Task added!");
                         
                         // setLoginStatus(true);
                         break;
@@ -121,7 +122,7 @@ function List(props){
 
     /*v1.1*/
     async function delItem(item){
-        console.log('delete ', item);  
+        // console.log('delete ', item);  
         /*send to mongo for delete*/
         const resp= await fetch(`${URL}/api/deleteTask`, {
                 method: "POST",
@@ -131,12 +132,12 @@ function List(props){
                 }
         });
         const response= await resp.text();
-        console.log("Msg received from server: ", response);
+        // console.log("Msg received from server: ", response);
         
         switch (response){
             case "200-TD" :{
                 alert("Task Deleted!");
-                console.log("Task deleted!");
+                // console.log("Task deleted!");
                 
                 // setLoginStatus(true);
                 break;

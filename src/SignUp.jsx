@@ -14,11 +14,11 @@ export default function SignUp() {
 
     const handleClick = async (e) => {
         e.preventDefault();
-        console.log("Sign Up Clicked!");
+        // console.log("Sign Up Clicked!");
         if (user.uname == '' || user.pass == '')
             alert('Please Fill out the fields');
         else{
-            console.log("User: ", user); 
+            // console.log("User: ", user); 
             /*send to mongo*/
             const resp= await fetch(`${URL}/api/signUp`, {
                 method: 'POST',
@@ -31,11 +31,11 @@ export default function SignUp() {
             // let response = '200-L'; 
             /*get from mongo*/
             const response= await resp.text();
-            console.log("Resonse from server:", response);
+            // console.log("Resonse from server:", response);
 
             switch (response){
                 case "200" :{
-                        console.log("SignUp Successfull!");
+                        // console.log("SignUp Successfull!");
                         alert("Account Successfully Created!");
                         setLoginStatus(true);
                         break;

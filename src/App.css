@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(38, 36, 36);
+    color: rgb(120, 119, 119);
+    font-family: serif;
+}
+
+.header{
+    background-color: rgb(23, 21, 21);
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    color: rgb(120, 119, 119);
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+
+.listArea{
+    padding-top : 16px;
+    text-align: center;
+}
+
+.listWrapper{
+    width: 50vw;
+    min-width: 400px;
+    display: inline-block;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 10px 10px 10px 10px rgb(23, 21, 21);
+    border-radius: 10px;
+}
+
+
+.listWrapper h1{
+    font-size: 100px;
+    color:rgb(120, 119, 119);
+}
+
+.listWrapper form{
+    margin: 16px 0;
+}
+
+.listWrapper form button{
+    margin: 0 10px;
+    height:40px;
+    width: 40px;
+    color: rgb(120, 119, 119);
+    background-color: rgb(38, 36, 36);
+    border-style: dashed;
+    border-color: goldenrod;
+    border-radius: 100px;
+    font-size: 25px;
+}
+
+.listWrapper form input{
+    width: 30vw;
+    min-width: 200px;
+    height: 35px;
+    font-size: 20px;
+    background-color: rgb(38, 36, 36);
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: goldenrod;
+    color: rgb(120, 119, 119);
+}
+
+
+.listWrapper .listItemArea{
+    margin-top: 10px;
+    padding-top : 10px;
+    text-align: left;
+}
+
+.listWrapper .listItemArea li{
+    font-size: 20px;
+    margin: 5px 30px;
+    padding: 5px 30px;
+    color: rgb(120, 119, 119);
+    border-style: solid;
+    list-style:  inside;
+    word-wrap: break-word;
+    line-height: 40px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.loginWrapper {
+    height: 80vh;
+    width: 40vw;
+    margin: 5vh auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    min-width: 200px;
+    box-shadow: 10px 10px 10px 10px rgb(23, 21, 21);
+    border-radius: 10px;
+}
+
+.loginWrapper h1 {
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.loginWrapper .txtIP, .loginWrapper .subButton{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+
+.loginWrapper .txtIP{
+    background-color: rgb(38, 36, 36);
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: goldenrod;
+    color: rgb(120, 119, 119);
+}
+
+.loginWrapper .subButton{
+    background-color: rgb(38, 36, 36);
+    border-style: dashed;
+    border-color: goldenrod;
+    border-radius: 100px;
+    color:rgb(120, 119, 119);
+    font-size: 25px;
+    padding: 2px 10px;
+}
+
+.subButton:hover {
+    background-color: goldenrod;
+}
+
+.txtIP {
+    font-size: 25px;
+    text-align: center;
+}
+
+/*used line height to size the text fields*/
+
+.signUpWrapper {
+    height: 80vh;
+    width: 40vw;
+    margin: 5vh auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    min-width: 200px;
+    box-shadow: 10px 10px 10px 10px rgb(23, 21, 21);
+    border-radius: 10px;
+}
+
+.signUpWrapper h1 {
+    text-align: center;
+    font-size: 9vw;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.signUpWrapper .txtIP, .signUpWrapper .subButton{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+.signUpWrapper .txtIP{
+    background-color: rgb(38, 36, 36);
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: goldenrod;
+    color: rgb(120, 119, 119);
+}
+
+.signUpWrapper .subButton{
+    background-color: rgb(38, 36, 36);
+    border-style: dashed;
+    border-color: goldenrod;
+    border-radius: 100px;
+    color:rgb(120, 119, 119);
+    font-size: 25px;
+    padding: 2px 10px;
+}
+
+.subButton:hover, #delBtn:hover {
+    background-color: goldenrod;
+}
+
+.txtIP {
+    font-size: 25px;
+    text-align: center;
+}
+
+#delBtn{
+    float: right;
+}

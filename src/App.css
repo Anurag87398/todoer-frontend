@@ -37,8 +37,14 @@ body{
 
 
 .listWrapper h1{
-    font-size: 25px;
+    font-size: 35px;
     color:rgb(120, 119, 119);
+}
+
+@media screen and (min-width: 600px) {
+    .listWrapper h1 {
+      font-size: 80px;
+    }
 }
 
 .listWrapper form{

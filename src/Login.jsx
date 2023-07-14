@@ -24,6 +24,8 @@ export default function Login() {
             // console.log("Login Clicked!");
             if (user.uname == '' || user.pass == '')
                 alert('Please Fill out the fields');
+            else if (user.uname.length > 10)
+                alert('Username should be less than 10 characters');
             else{
                 // console.log("User:", user); 
                 

@@ -7,6 +7,7 @@ body{
     background-color: rgb(38, 36, 36);
     color: rgb(120, 119, 119);
     font-family: serif;
+    box-sizing: border-box;
 }
 
 .header{
@@ -26,7 +27,7 @@ body{
 
 .listWrapper{
     width: 50vw;
-    min-width: 400px;
+    min-width: 300px;
     display: inline-block;
     padding: 16px;
     margin: 16px 0;
@@ -36,7 +37,7 @@ body{
 
 
 .listWrapper h1{
-    font-size: 100px;
+    font-size: 25px;
     color:rgb(120, 119, 119);
 }
 
